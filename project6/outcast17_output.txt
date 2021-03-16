@@ -1,0 +1,324 @@
+Distance between art and art is: 0
+Distance between art and canvas is: 4
+Distance between art and china is: 7
+Distance between art and culture is: 5
+Distance between art and kingdom is: 5
+Distance between art and particularism is: 7
+Distance between art and point is: 5
+Distance between art and portable is: 9
+Distance between art and ritual is: 4
+Distance between art and road is: 4
+Distance between art and script is: 5
+Distance between art and sculpture is: 1
+Distance between art and silk is: 4
+Distance between art and style is: 3
+Distance between art and transmission is: 5
+Distance between art and wall is: 4
+Distance between art and toluene is: 14
+(art, 86)
+**************Current max noun: (art, 86)***************
+Distance between canvas and art is: 4
+Distance between canvas and canvas is: 0
+Distance between canvas and china is: 7
+Distance between canvas and culture is: 6
+Distance between canvas and kingdom is: 4
+Distance between canvas and particularism is: 12
+Distance between canvas and point is: 5
+Distance between canvas and portable is: 9
+Distance between canvas and ritual is: 12
+Distance between canvas and road is: 4
+Distance between canvas and script is: 10
+Distance between canvas and sculpture is: 6
+Distance between canvas and silk is: 2
+Distance between canvas and style is: 6
+Distance between canvas and transmission is: 7
+Distance between canvas and wall is: 4
+Distance between canvas and toluene is: 14
+(canvas, 112)
+**************Current max noun: (canvas, 112)***************
+Distance between china and art is: 7
+Distance between china and canvas is: 7
+Distance between china and china is: 0
+Distance between china and culture is: 12
+Distance between china and kingdom is: 11
+Distance between china and particularism is: 18
+Distance between china and point is: 8
+Distance between china and portable is: 11
+Distance between china and ritual is: 16
+Distance between china and road is: 7
+Distance between china and script is: 14
+Distance between china and sculpture is: 11
+Distance between china and silk is: 7
+Distance between china and style is: 6
+Distance between china and transmission is: 9
+Distance between china and wall is: 7
+Distance between china and toluene is: 17
+(china, 168)
+**************Current max noun: (china, 168)***************
+Distance between culture and art is: 5
+Distance between culture and canvas is: 6
+Distance between culture and china is: 12
+Distance between culture and culture is: 0
+Distance between culture and kingdom is: 4
+Distance between culture and particularism is: 8
+Distance between culture and point is: 3
+Distance between culture and portable is: 14
+Distance between culture and ritual is: 8
+Distance between culture and road is: 8
+Distance between culture and script is: 8
+Distance between culture and sculpture is: 10
+Distance between culture and silk is: 9
+Distance between culture and style is: 2
+Distance between culture and transmission is: 7
+Distance between culture and wall is: 5
+Distance between culture and toluene is: 13
+(culture, 122)
+**************Current max noun: (china, 168)***************
+Distance between kingdom and art is: 5
+Distance between kingdom and canvas is: 4
+Distance between kingdom and china is: 11
+Distance between kingdom and culture is: 4
+Distance between kingdom and kingdom is: 0
+Distance between kingdom and particularism is: 10
+Distance between kingdom and point is: 4
+Distance between kingdom and portable is: 13
+Distance between kingdom and ritual is: 8
+Distance between kingdom and road is: 8
+Distance between kingdom and script is: 6
+Distance between kingdom and sculpture is: 11
+Distance between kingdom and silk is: 8
+Distance between kingdom and style is: 4
+Distance between kingdom and transmission is: 7
+Distance between kingdom and wall is: 5
+Distance between kingdom and toluene is: 14
+(kingdom, 122)
+**************Current max noun: (china, 168)***************
+Distance between particularism and art is: 7
+Distance between particularism and canvas is: 12
+Distance between particularism and china is: 18
+Distance between particularism and culture is: 8
+Distance between particularism and kingdom is: 10
+Distance between particularism and particularism is: 0
+Distance between particularism and point is: 9
+Distance between particularism and portable is: 20
+Distance between particularism and ritual is: 12
+Distance between particularism and road is: 12
+Distance between particularism and script is: 12
+Distance between particularism and sculpture is: 17
+Distance between particularism and silk is: 15
+Distance between particularism and style is: 9
+Distance between particularism and transmission is: 11
+Distance between particularism and wall is: 12
+Distance between particularism and toluene is: 21
+(particularism, 205)
+**************Current max noun: (particularism, 205)***************
+Distance between point and art is: 5
+Distance between point and canvas is: 5
+Distance between point and china is: 8
+Distance between point and culture is: 3
+Distance between point and kingdom is: 4
+Distance between point and particularism is: 9
+Distance between point and point is: 0
+Distance between point and portable is: 10
+Distance between point and ritual is: 8
+Distance between point and road is: 5
+Distance between point and script is: 4
+Distance between point and sculpture is: 8
+Distance between point and silk is: 5
+Distance between point and style is: 4
+Distance between point and transmission is: 6
+Distance between point and wall is: 3
+Distance between point and toluene is: 8
+(point, 95)
+**************Current max noun: (particularism, 205)***************
+Distance between portable and art is: 9
+Distance between portable and canvas is: 9
+Distance between portable and china is: 11
+Distance between portable and culture is: 14
+Distance between portable and kingdom is: 13
+Distance between portable and particularism is: 20
+Distance between portable and point is: 10
+Distance between portable and portable is: 0
+Distance between portable and ritual is: 18
+Distance between portable and road is: 9
+Distance between portable and script is: 16
+Distance between portable and sculpture is: 13
+Distance between portable and silk is: 9
+Distance between portable and style is: 9
+Distance between portable and transmission is: 8
+Distance between portable and wall is: 9
+Distance between portable and toluene is: 19
+(portable, 196)
+**************Current max noun: (particularism, 205)***************
+Distance between ritual and art is: 4
+Distance between ritual and canvas is: 12
+Distance between ritual and china is: 16
+Distance between ritual and culture is: 8
+Distance between ritual and kingdom is: 8
+Distance between ritual and particularism is: 12
+Distance between ritual and point is: 8
+Distance between ritual and portable is: 18
+Distance between ritual and ritual is: 0
+Distance between ritual and road is: 6
+Distance between ritual and script is: 10
+Distance between ritual and sculpture is: 6
+Distance between ritual and silk is: 13
+Distance between ritual and style is: 8
+Distance between ritual and transmission is: 5
+Distance between ritual and wall is: 10
+Distance between ritual and toluene is: 19
+(ritual, 163)
+**************Current max noun: (particularism, 205)***************
+Distance between road and art is: 4
+Distance between road and canvas is: 4
+Distance between road and china is: 7
+Distance between road and culture is: 8
+Distance between road and kingdom is: 8
+Distance between road and particularism is: 12
+Distance between road and point is: 5
+Distance between road and portable is: 9
+Distance between road and ritual is: 6
+Distance between road and road is: 0
+Distance between road and script is: 10
+Distance between road and sculpture is: 8
+Distance between road and silk is: 4
+Distance between road and style is: 6
+Distance between road and transmission is: 5
+Distance between road and wall is: 4
+Distance between road and toluene is: 14
+(road, 114)
+**************Current max noun: (particularism, 205)***************
+Distance between script and art is: 5
+Distance between script and canvas is: 10
+Distance between script and china is: 14
+Distance between script and culture is: 8
+Distance between script and kingdom is: 6
+Distance between script and particularism is: 12
+Distance between script and point is: 4
+Distance between script and portable is: 16
+Distance between script and ritual is: 10
+Distance between script and road is: 10
+Distance between script and script is: 0
+Distance between script and sculpture is: 13
+Distance between script and silk is: 11
+Distance between script and style is: 4
+Distance between script and transmission is: 9
+Distance between script and wall is: 8
+Distance between script and toluene is: 17
+(script, 157)
+**************Current max noun: (particularism, 205)***************
+Distance between sculpture and art is: 1
+Distance between sculpture and canvas is: 6
+Distance between sculpture and china is: 11
+Distance between sculpture and culture is: 10
+Distance between sculpture and kingdom is: 11
+Distance between sculpture and particularism is: 17
+Distance between sculpture and point is: 8
+Distance between sculpture and portable is: 13
+Distance between sculpture and ritual is: 6
+Distance between sculpture and road is: 8
+Distance between sculpture and script is: 13
+Distance between sculpture and sculpture is: 0
+Distance between sculpture and silk is: 8
+Distance between sculpture and style is: 6
+Distance between sculpture and transmission is: 8
+Distance between sculpture and wall is: 8
+Distance between sculpture and toluene is: 21
+(sculpture, 155)
+**************Current max noun: (particularism, 205)***************
+Distance between silk and art is: 4
+Distance between silk and canvas is: 2
+Distance between silk and china is: 7
+Distance between silk and culture is: 9
+Distance between silk and kingdom is: 8
+Distance between silk and particularism is: 15
+Distance between silk and point is: 5
+Distance between silk and portable is: 9
+Distance between silk and ritual is: 13
+Distance between silk and road is: 4
+Distance between silk and script is: 11
+Distance between silk and sculpture is: 8
+Distance between silk and silk is: 0
+Distance between silk and style is: 6
+Distance between silk and transmission is: 7
+Distance between silk and wall is: 4
+Distance between silk and toluene is: 12
+(silk, 124)
+**************Current max noun: (particularism, 205)***************
+Distance between style and art is: 3
+Distance between style and canvas is: 6
+Distance between style and china is: 6
+Distance between style and culture is: 2
+Distance between style and kingdom is: 4
+Distance between style and particularism is: 9
+Distance between style and point is: 4
+Distance between style and portable is: 9
+Distance between style and ritual is: 8
+Distance between style and road is: 6
+Distance between style and script is: 4
+Distance between style and sculpture is: 6
+Distance between style and silk is: 6
+Distance between style and style is: 0
+Distance between style and transmission is: 7
+Distance between style and wall is: 6
+Distance between style and toluene is: 14
+(style, 100)
+**************Current max noun: (particularism, 205)***************
+Distance between transmission and art is: 5
+Distance between transmission and canvas is: 7
+Distance between transmission and china is: 9
+Distance between transmission and culture is: 7
+Distance between transmission and kingdom is: 7
+Distance between transmission and particularism is: 11
+Distance between transmission and point is: 6
+Distance between transmission and portable is: 8
+Distance between transmission and ritual is: 5
+Distance between transmission and road is: 5
+Distance between transmission and script is: 9
+Distance between transmission and sculpture is: 8
+Distance between transmission and silk is: 7
+Distance between transmission and style is: 7
+Distance between transmission and transmission is: 0
+Distance between transmission and wall is: 7
+Distance between transmission and toluene is: 17
+(transmission, 125)
+**************Current max noun: (particularism, 205)***************
+Distance between wall and art is: 4
+Distance between wall and canvas is: 4
+Distance between wall and china is: 7
+Distance between wall and culture is: 5
+Distance between wall and kingdom is: 5
+Distance between wall and particularism is: 12
+Distance between wall and point is: 3
+Distance between wall and portable is: 9
+Distance between wall and ritual is: 10
+Distance between wall and road is: 4
+Distance between wall and script is: 8
+Distance between wall and sculpture is: 8
+Distance between wall and silk is: 4
+Distance between wall and style is: 6
+Distance between wall and transmission is: 7
+Distance between wall and wall is: 0
+Distance between wall and toluene is: 11
+(wall, 107)
+**************Current max noun: (particularism, 205)***************
+Distance between toluene and art is: 14
+Distance between toluene and canvas is: 14
+Distance between toluene and china is: 17
+Distance between toluene and culture is: 13
+Distance between toluene and kingdom is: 14
+Distance between toluene and particularism is: 21
+Distance between toluene and point is: 8
+Distance between toluene and portable is: 19
+Distance between toluene and ritual is: 19
+Distance between toluene and road is: 14
+Distance between toluene and script is: 17
+Distance between toluene and sculpture is: 21
+Distance between toluene and silk is: 12
+Distance between toluene and style is: 14
+Distance between toluene and transmission is: 17
+Distance between toluene and wall is: 11
+Distance between toluene and toluene is: 0
+(toluene, 245)
+**************Current max noun: (toluene, 245)***************
+outcast(data/outcast17.txt) = toluene

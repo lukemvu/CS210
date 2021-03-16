@@ -1,0 +1,36 @@
+Distance between horse and horse is: 0
+Distance between horse and zebra is: 2
+Distance between horse and cat is: 7
+Distance between horse and bear is: 6
+Distance between horse and table is: 6
+(horse, 21)
+**************Current max noun: (horse, 21)***************
+Distance between zebra and horse is: 2
+Distance between zebra and zebra is: 0
+Distance between zebra and cat is: 7
+Distance between zebra and bear is: 6
+Distance between zebra and table is: 16
+(zebra, 31)
+**************Current max noun: (zebra, 31)***************
+Distance between cat and horse is: 7
+Distance between cat and zebra is: 7
+Distance between cat and cat is: 0
+Distance between cat and bear is: 3
+Distance between cat and table is: 7
+(cat, 24)
+**************Current max noun: (zebra, 31)***************
+Distance between bear and horse is: 6
+Distance between bear and zebra is: 6
+Distance between bear and cat is: 3
+Distance between bear and bear is: 0
+Distance between bear and table is: 11
+(bear, 26)
+**************Current max noun: (zebra, 31)***************
+Distance between table and horse is: 6
+Distance between table and zebra is: 16
+Distance between table and cat is: 7
+Distance between table and bear is: 11
+Distance between table and table is: 0
+(table, 40)
+**************Current max noun: (table, 40)***************
+outcast(data/outcast5.txt) = table

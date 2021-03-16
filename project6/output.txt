@@ -1,0 +1,81 @@
+Distance between water and water is: 0
+Distance between water and soda is: 2
+Distance between water and bed is: 3
+Distance between water and orange_juice is: 4
+Distance between water and milk is: 3
+Distance between water and apple_juice is: 4
+Distance between water and tea is: 3
+Distance between water and coffee is: 3
+(water, 22)
+**************Current max noun: (water, 22)***************
+Distance between soda and water is: 2
+Distance between soda and soda is: 0
+Distance between soda and bed is: 9
+Distance between soda and orange_juice is: 4
+Distance between soda and milk is: 3
+Distance between soda and apple_juice is: 4
+Distance between soda and tea is: 3
+Distance between soda and coffee is: 3
+(soda, 28)
+**************Current max noun: (soda, 28)***************
+Distance between bed and water is: 3
+Distance between bed and soda is: 9
+Distance between bed and bed is: 0
+Distance between bed and orange_juice is: 12
+Distance between bed and milk is: 9
+Distance between bed and apple_juice is: 12
+Distance between bed and tea is: 9
+Distance between bed and coffee is: 9
+(bed, 63)
+**************Current max noun: (bed, 63)***************
+Distance between orange_juice and water is: 4
+Distance between orange_juice and soda is: 4
+Distance between orange_juice and bed is: 12
+Distance between orange_juice and orange_juice is: 0
+Distance between orange_juice and milk is: 3
+Distance between orange_juice and apple_juice is: 2
+Distance between orange_juice and tea is: 3
+Distance between orange_juice and coffee is: 3
+(orange_juice, 31)
+**************Current max noun: (bed, 63)***************
+Distance between milk and water is: 3
+Distance between milk and soda is: 3
+Distance between milk and bed is: 9
+Distance between milk and orange_juice is: 3
+Distance between milk and milk is: 0
+Distance between milk and apple_juice is: 3
+Distance between milk and tea is: 2
+Distance between milk and coffee is: 2
+(milk, 25)
+**************Current max noun: (bed, 63)***************
+Distance between apple_juice and water is: 4
+Distance between apple_juice and soda is: 4
+Distance between apple_juice and bed is: 12
+Distance between apple_juice and orange_juice is: 2
+Distance between apple_juice and milk is: 3
+Distance between apple_juice and apple_juice is: 0
+Distance between apple_juice and tea is: 3
+Distance between apple_juice and coffee is: 3
+(apple_juice, 31)
+**************Current max noun: (bed, 63)***************
+Distance between tea and water is: 3
+Distance between tea and soda is: 3
+Distance between tea and bed is: 9
+Distance between tea and orange_juice is: 3
+Distance between tea and milk is: 2
+Distance between tea and apple_juice is: 3
+Distance between tea and tea is: 0
+Distance between tea and coffee is: 2
+(tea, 25)
+**************Current max noun: (bed, 63)***************
+Distance between coffee and water is: 3
+Distance between coffee and soda is: 3
+Distance between coffee and bed is: 9
+Distance between coffee and orange_juice is: 3
+Distance between coffee and milk is: 2
+Distance between coffee and apple_juice is: 3
+Distance between coffee and tea is: 2
+Distance between coffee and coffee is: 0
+(coffee, 25)
+**************Current max noun: (bed, 63)***************
+outcast(data/outcast8.txt) = bed

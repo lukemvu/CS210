@@ -1,0 +1,75 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<15>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<3>>>
+
+3. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Deque):
+
+   I started by reviewing lecture slides and looking up online how doubly
+   linkedlists and queues worked. I looked into the classes for LinkedStack
+   and LinkedQueue from the princeton libraries. The initial methods were
+   straight forward to implement. I ran into issues understanding the logic
+   and direction between linking new nodes next and prev. I spent a lot of
+   time reading online and watching videos to better understand the way
+   new nodes were initialized and pointed prev/next. Found it was easier
+   to visualize prev and next as left and right--the way nodes pointed.
+   addLast was straight forward to implement as a kind of mirror to addFirst.
+   Removals were straight forward to understand after understanding how to
+   point nodes. First run passed all run_test but gradescope submission
+   failed all methods but addfirst and last. Intellij auto corrected the
+   return method to ternary expression
+   'return tempNode != null ? tempNode.item : null;'
+   Tried a resubmission and got all methods but the remove methods to pass
+   cases. Allowed me to narrow down error somewhere in removal methods.
+   Went back to trace through removal methods. Original first.next was
+   getting assigned to tempNode--which is incorrect, it should have
+   been first. Rewrote method. tempNode = first.
+
+   Problem 2 (Random Queue):
+
+   I started by reading up on the array resizing in the Algorithms book and
+   proceeded to follow the checklist. If N is 0, queue must be empty. I
+   created a resize method to take in the size of the new array and copy
+   array q to it. Confused myself worrying about how to shift all the indices
+   after removing an item from the array but realized that because its a
+   random queue, the item at the end of the array is slotted into the spot
+   that got removed. Ran into compilation issues initializing the array.
+   Found the helper method resize already made and found I needed to write
+   it as Item[] q = (Item[]) new Object(2). On run time got an error on
+   enqueue method. Narrowed the issue down to q.length returning null and
+   not 2 as expected after initializing. q = (Item[]) new Object(2) was the
+   correct way to initialize the array in the constructor. I was getting
+   compilation errors some how because I had uncommented the suppressions.
+   I re-commented them out as was in the original code. Code compiles
+   successfully and test case passes. Gradescope submission fails some
+   tests checking for randomization. Changed paramenters from 0 to i in
+   int randomIndex = StdRandom.uniform(i, N); This way, the same index
+   couldn't be randomly swapped back.
+
+   Problem 3 (Subset): The main method from the Percolation program in
+   project 1 read integers from a file. I went back to that program to
+   find that code and implemented it into subset. No issues.
+
+   
+4. Did you receive help from anyone? List their names, status (classmate, 
+   CS210 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   Tianyu K.            TA         Tracing my initial code for addFirst method
+   James M.             TA         Piazza reply on question asked for p2
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   ...

@@ -1,0 +1,150 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<25>>>
+
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<5>>>
+
+3. Provide a short description of how you approached each problem, issues you
+   encountered, and how you resolved those issues.
+
+   Problem 1 (WordNet Data Type)
+
+      Approach:
+
+      I utilize the In library to read in lines from the synset and hypernym
+      text files and utilize split() to break up the line into tokens. The
+      st bst is built from unique nouns, each node node contains a noun
+      and the accompanying set of integers that contain the synset id
+      correlating to that noun. The rst bst is built with each node containing
+      the synset id as its key and the associated complete string as its value.
+
+      The digraph is sized to rst, which is the size of the total synset ids.
+      For each line in the hypernyms text file, an edge is added from the
+      vertex synset id to each of its hypernym synset id.
+
+      sca() utilizes methods from the ShortestCommonAncestor class to determine
+      the shortest common ancestor between the two nouns passed in.
+
+      distance() similarly uses those methods to determine distance.
+
+      Issues and resolution:
+
+      On the first run through, I did not take into account that a synset id
+      could have multiple nouns associated with it. I did not properly split
+      the set of nouns up individually. I found this error when the test cases
+      recorded a lower # of total nouns in the tree. This was resolved with
+      an additional split of the nouns field for each line.
+
+   Problem 2 (ShortestCommonAncestor Data Type)
+
+      Approach:
+
+      distFrom() applies a BFS algorithm starting from the vertex is it applied
+      on using a queue to track vertices to visit and a hash table to store
+      visited vertices and the distance from the origin vertex to that vertex.
+      At each vertex, the neighboring vertices are checked whether they have
+      been visited yet by a search through the hash table. If they haven't been
+      visited, then they are inserted into the queue to later explore and the
+      vertex is inserted with its distance from the original vertex. The final
+      result is a hash table containing only vertices and their respective
+      distances from the origin vertex at the start of the BFS.
+
+      ancestor() looks for common vertices that are reachable by both input
+      vertices v, w. The lowest sum of the distance from each input vertex to
+      the common vertex is returned. This is done by iterating through all
+      the vertices in the hash table from v and checking whether the vertex
+      is also contained in the hash table from w. The result is the shortest
+      common ancestor between the two input vertices.
+
+      length() utilizes the shortest common ancestor found by the ancestor()
+      method and applies that key to the hash tables of distFrom() v and w.
+      The resulting sum of their distances to that shortest common ancestor
+      vertex is the shortest ancestral path.
+
+      triad() applies the length() and ancestor() methods to find the sca and
+      its vertices by iterating through all possible vertices of the sets of
+      A and B.
+
+      length() and ancestor() for the sets of vertices utilized triad() and
+      methods previously described.
+
+      Issues and resolution:
+
+      My initial approach imported the BFS library for digraphs to implement
+      the distFrom method. This was inefficient as the BFS object explored
+      the entirety of the digraph. After coding with this approach and
+      completing the other methods, I ran into a host of other issues with my
+      outputs in Wordnet and efficiency. I scrapped the code and started over
+      from distFrom() to build a more efficient algorithm that traversed only
+      nodes that were relevant, more closely following the hints of the
+      checklist.
+
+      I fixed issues with the distFrom() method when tracing through some
+      of the example digraphs. At certain places, the distance between two
+      vertices was off. Distance was being incremented more than it should
+      have. I fixed this issue by adding the if statement to check whether
+      the set of neighbors was empty or not before incrementing distance.
+
+      I ran into some issues with distFrom() when I did not insert the start
+      vertex of the method into the hash table. This was important as the
+      sca of a pair of vertices can be one of the vertices itself, with that
+      vertex having a distance of 0.
+
+      After getting incorrect sca values and distances for the Wordnet output
+      and tracing the the paths of the vertices of the graph on paper, I
+      realized I forgot to update the minDis value inside the triad() method.
+      I had also incorrectly applied the triad array in the length() method
+      for the iterable sets. This originally resulted in getting 0 for all of
+      my distances outputs for Wordnet.
+
+      My last issue with distFrom() is detailed below as it only showed up
+      in testing Outcast.
+
+   Problem 3 (Outcast Data Type)
+
+      Approach:
+
+      outcast() utilizes a double for loop to iterate each input noun with all
+      the other input nouns. The max distance from each is summed and
+      associated with the noun. The resulting returned noun is one who is
+      furthest from the others on the tree.
+
+      Issues and resolution:
+
+      The last gs test case failed on submission. I traced the distances
+      between the nouns and totals; outcast() worked appropriately.
+      I went to Tianyu's office hours for help debugging the code.
+
+      The distFrom() method had some improper logic. I originally incremented
+      a counter to track distance; at every visited vertex that got inserted
+      into the queue, distance was incremented which made their distances
+      larger than they should have been in some cases. By Tianyu's correction,
+      instead of using a counter to track distance, when a vertex is added
+      to the hash table, the function gets the parent vertex's distance and
+      increments it by 1.
+
+      hst.put(neighbor, hst.get(current)+1);
+
+      This resolved the last issue I had with outcast.
+
+
+
+4. Did you receive help from anyone? List their names, status (classmate,
+   CS210 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   Tianyu K             TA         code review, fixed distFrom()
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   The typo in the checklist for the length(int v, int w) method stumped me for
+   hours as I was trying to figure out why I would use itself to calculate
+   length. It would be helpful for future classes to fix this error.

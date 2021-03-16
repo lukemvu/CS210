@@ -1,0 +1,125 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<20>>>
+
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<5>>>
+
+3. Provide a short description of how you approached each problem, issues you
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Brute-force Implementation)
+      Approach:
+
+      I utilized the api of the RedBlackBinarySearchTreeST library
+      to implement isEmpty(), size(), put(), get(), contains(),
+      and points(). For range, all points in the bst were iterated
+      through; if they were contained in rect, they were enqueued
+      into the LinkedQueue. Similarly for nearest(), all the points
+      in the tree were iterated through; the smallestDis and
+      smallestPt were updated as the distance from target point
+      and current points was calculated.
+
+      For the k nearest() method, I utilized 2 MinPQ. The first contained
+      all the points in the tree. k points were removed from the first
+      MinPQ and inserted into the second MinPQ which stored the total
+      of k points that were nearest to the target point.
+
+      Issues and resolution:
+
+      I originally used Double.MAX_VALUE instead of properly using
+      Double.POSITIVE_INFINITY to initialize smallestDis in calculating
+      nearest point. No other issues.
+
+   Problem 2 (2d-tree Implementation)
+      Approach:
+
+      public put() method takes the only node being tracked, root.
+      root's rectangle has no bounds on its dimensions as it is the
+      first point. The first node is x-aligned (lr == true).
+
+      private put() method has four cases, from x-aligned or y-aligned
+      which determines what point values to compare (x or y), then
+      compares the passed point with the point at that node. The recursive
+      call depends on those aforementioned two factors (alignment,
+      comparison). The rectangle passed is updated with one new bound
+      depending on which of the 4 cases it went through.
+
+      x->y->left:  x max
+      x->y->right: x min
+      y->x->left:  y max
+      y->x->right: y min
+
+      At each recursive call, the boolean lr is inverted to maintain
+      the correct alignment.
+
+      private get() method like the put method looks at 4 cases to
+      make its recursive call. It checks the node's alignment and then
+      compares the target point to the point at the node to traverse
+      down the tree.
+
+      points() method utilizes two queues, one holding nodes, the other
+      holding the points. The root is enqueued into the node queue. While
+      the node queue is not empty, a node is dequeued and stored into a
+      temp node where the point from the (dequeued node/temp node) is
+      enqueued into the point queue. The node queue enqueues the left
+      and right nodes of that original node (dequeued/temp node).
+      Every iteration of the loop enqueues the next set of children
+      in level order, while enqueing the points in level order.
+
+      private range() checks if a point in the node is contained in the
+      rect. If it is there, that point is enqueued into rQ. it recursively
+      calls itself on the nodes children.
+
+      Private nearest()
+
+      I calculated the distance to query point p from x and the distance
+      to the rectangle for each call. If key is different from query point
+      and the distance between the two is smaller than nearest, nearestDist
+      and the nearest node are updated. I compare the nearest distance to
+      the distance to the rectangle. If distance to rectangle at the node is
+      smaller than the nearest distance, there is a possible point with a
+      smaller distance to target.
+
+      There are four cases to check once again, x or y aligned and point
+      larger or smaller. Each case goes to check the best side, or, side
+      of the tree that has a better chance of containing a point that is
+      nearer to the target point.
+
+      Issues and resolution:
+
+      private put(), did not properly update the node's children on the
+      recursive calls. Fixed by properly assigning.
+
+      e.g. orig:  put(x.lb, p, val, newRect, !lr);
+           fixed: x.lb = put(x.lb, p, val, newRect, !lr);
+
+      private get(), did not return from each case properly, fixed by
+      adding the correct return get(); call.
+
+      private nearest(), ran into issues properly traversing the tree.
+      In each case, after checking the best side and updating the
+      nearest point, I didn't update the new nearest distance.
+
+
+4. Did you receive help from anyone? List their names, status (classmate,
+   CS210 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   James M.            TA          Discussion recording
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   I started this project a lot later than normal and ran into a lot of
+   issues with the recorded Zoom lectures/discussions to get tips.
+
+   I'm not entirely sure if my nearest method is properly pruning the tree.
+   I ran out of time before I could figure that out. I ran out of time to
+   figure out how to prune the k nearest method as well.

@@ -1,0 +1,41 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<15>>>
+
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<3>>>
+
+3. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Model a Percolation System): 
+    - forgot to implement corner cases, googled how to throw an exception and implemented it
+    - ran into issues with encode function not encoding the right numbers, threw print statements
+      throughout the code to see where the issues where and found that N was not properly giving the
+      right value
+    - to address backwash problem realized using two uf objects would allow to find connections from
+      drain to source and a second for purely the source, this way a full block would be connected to both
+      source drain and just source
+
+   Problem 2 (Estimate Percolation Threshold): 
+   - forgot to implement corner cases after submission, fixed with resubmissions
+   - ran into some issues with data types from int to doubles when calculating the ratios
+   - forgot to initialize the double array
+   - 
+
+4. Did you receive help from anyone? List their names, status (classmate, 
+   CS210 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   ...                ...          ...
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   Thank you for providing instructions for setting up native installation of the image

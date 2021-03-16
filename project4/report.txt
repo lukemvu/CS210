@@ -1,0 +1,93 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<15>>>
+
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<4>>>
+
+3. Provide a short description of how you approached each problem, issues you
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Board Data Type): ...............................................
+   For blankPos(), I looked for the relationship between the position in
+   correct board and the indices i, j. Iterating through the matrix, if zero
+   is found than the correct board position is i*N + j + 1 where N is the
+   size of the N x N matrix. For inversions(), I make a temporary 1D array
+   rowmaj[] of size N*N to store the N size matrix in. I iterate through the
+   1D array using two for loops, checking index i with j to look for where
+   i is larger than j, skipping 0 (blank), and incrementing a counter inv.
+   To cloneTiles, I create a new empty 2D matrix of size [N][]. For each
+   row, I clone row this.tiles[i] into my new tilesCopy[i]. After each
+   row is cloned, I return the new copy tilesCopy. For hamming(), I increment
+   a counter hcount every time a tile at position i, j does not match its
+   correct board value, e.g. for a 3x3 matrix, [0,0] is 1 and [2,1] is
+   8. Index [2,2]'s value is 9 but 0 (blank) is the correct spot. I adjust
+   for this by returning the count-1 as value 0 has no correct board
+   position. For manhattan(), like hamming(), I iterate through each
+   index of the 2D array with two for loops. I compare the value at the index
+   with whether it's at the position on the correct board. The
+   difference between the correct indices of the value and it's current
+   indices are summed up to get the manhattan value. To find the correct
+   position indices, i is found from the tile (value - 1) / N. j is found from
+   the tile (value - 1) % N. For isGoal(), if hamming() is 0,
+   all the tiles are in the correct places on the board,
+   therefore the board is a goal board. For isSolvable(),
+   an if-else checks for an odd or even board. An odd board is solvable if
+   its # of inversions are even. An even board is solvable if the sum of the
+   inversions and the row index the blank spot is on is odd. I found the
+   index of the blank row by finding the (blankPos() - 1) / N. For equals(),
+   I followed the syntax in Transaction.java, comparing the pointers,
+   checking if that is null, checking the two object's classes, and then
+   finally comparing the tiles for both boards. GS threw an error for
+   comparing boards of different sizes. I added a comparison for board sizes.
+   For neighbors(), I start with creating the new LinkedQueue of Board objects
+   and finding the index of the blankPos. Four if statements check the board
+   for whether there is a legal swap of the blank tile with the tile in up,
+   right, down, and left position. The if statement checks the boundaries of
+   the matrix in the direction it is looking to swap. Within each legal swap,
+   the matrix is cloned and the blank tile swapped; a new board is created
+   with the swapped, cloned matrix and enqueued. Some initial submission
+   errors had to do with the incorrect calculation of the goal board tile
+   and other indices as a result of not using N and using 3
+   instead which allowed for some test cases on N=3 size boards to pass
+   but not N=4 size boards.
+
+
+   Problem 2 (Solver Data Type): ..............................................
+   For the HammingOrder and ManhattanOrder comparator objects, I followed the
+   code from Term.java. aBoard and bBoard store the sum of the order value
+   and # of moves. In compare(a, b), a has a lower priority than b if it
+   returns negative, higher if positive, equal if same priority. For Solver,
+   MinPQ pq was initialized using the Manhattan ordering comparator object.
+   The initial node was inserted with the initial board, 0 moves, and a null
+   previous node. Within the while loop, if a SearchNode contains the goal
+   board, it stores move, then iterates from the SearchNode backwards towards
+   the initial SearchNode, pushing each board onto the stack solution. If the
+   SearchNode board is not a goal board, then it first checks whether the
+   previous SearchNode exists, and if it does, then checks whether the
+   neighboring board is a match to the previous SearchNode's board. Unique
+   neighboring boards are inserted into the pq and their moves incremented
+   and previous node linked. The only issue I had was with my initial run;
+   I got a null pointer exception error. Originally, I was trying to make
+   the previous check with if(!neighbors.equals(node.previous.board)).
+   node.previous.board does not exist if node.previous is null. To fix this
+   problem, I added an OR conditional checking if the previous node is null
+   and to proceed to insert all neighbors (there are no repeat boards if
+   these are the first set of neighbor boards).
+
+4. Did you receive help from anyone? List their names, status (classmate,
+   CS210 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   ...                ...          ...
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   ...

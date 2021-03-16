@@ -1,0 +1,2 @@
+export CLASSPATH="$HOME/lib/stdlib.jar:$HOME/lib/dsa.jar:$PROJECT_HOME/project3/out"
+javac -d out src/main/edu/umb/cs210/p3/$1

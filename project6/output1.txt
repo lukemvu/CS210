@@ -1,0 +1,38 @@
+Distance between particularism and art is: 7
+Distance between particularism and canvas is: 12
+Distance between particularism and china is: 18
+Distance between particularism and culture is: 8
+Distance between particularism and kingdom is: 10
+Distance between particularism and particularism is: 0
+Distance between particularism and point is: 9
+Distance between particularism and portable is: 20
+Distance between particularism and ritual is: 12
+Distance between particularism and road is: 12
+Distance between particularism and script is: 12
+Distance between particularism and sculpture is: 17
+Distance between particularism and silk is: 15
+Distance between particularism and style is: 9
+Distance between particularism and transmission is: 11
+Distance between particularism and wall is: 12
+Distance between particularism and toluene is: 21
+(particularism, 205)
+**************Current max noun: (particularism, 205)***************
+Distance between toluene and art is: 14
+Distance between toluene and canvas is: 14
+Distance between toluene and china is: 17
+Distance between toluene and culture is: 13
+Distance between toluene and kingdom is: 14
+Distance between toluene and particularism is: 21
+Distance between toluene and point is: 8
+Distance between toluene and portable is: 19
+Distance between toluene and ritual is: 19
+Distance between toluene and road is: 14
+Distance between toluene and script is: 17
+Distance between toluene and sculpture is: 21
+Distance between toluene and silk is: 12
+Distance between toluene and style is: 14
+Distance between toluene and transmission is: 17
+Distance between toluene and wall is: 11
+Distance between toluene and toluene is: 0
+(toluene, 245)
+**************Current max noun: (toluene, 245)***************

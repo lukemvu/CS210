@@ -1,0 +1,144 @@
+Distance between apple and apple is: 0
+Distance between apple and pear is: 2
+Distance between apple and peach is: 2
+Distance between apple and banana is: 2
+Distance between apple and lime is: 3
+Distance between apple and lemon is: 3
+Distance between apple and blueberry is: 3
+Distance between apple and strawberry is: 3
+Distance between apple and mango is: 2
+Distance between apple and watermelon is: 3
+Distance between apple and potato is: 7
+(apple, 30)
+**************Current max noun: (apple, 30)***************
+Distance between pear and apple is: 2
+Distance between pear and pear is: 0
+Distance between pear and peach is: 2
+Distance between pear and banana is: 2
+Distance between pear and lime is: 3
+Distance between pear and lemon is: 3
+Distance between pear and blueberry is: 3
+Distance between pear and strawberry is: 3
+Distance between pear and mango is: 2
+Distance between pear and watermelon is: 3
+Distance between pear and potato is: 7
+(pear, 30)
+**************Current max noun: (apple, 30)***************
+Distance between peach and apple is: 2
+Distance between peach and pear is: 2
+Distance between peach and peach is: 0
+Distance between peach and banana is: 2
+Distance between peach and lime is: 3
+Distance between peach and lemon is: 3
+Distance between peach and blueberry is: 3
+Distance between peach and strawberry is: 3
+Distance between peach and mango is: 2
+Distance between peach and watermelon is: 3
+Distance between peach and potato is: 7
+(peach, 30)
+**************Current max noun: (apple, 30)***************
+Distance between banana and apple is: 2
+Distance between banana and pear is: 2
+Distance between banana and peach is: 2
+Distance between banana and banana is: 0
+Distance between banana and lime is: 3
+Distance between banana and lemon is: 3
+Distance between banana and blueberry is: 3
+Distance between banana and strawberry is: 2
+Distance between banana and mango is: 2
+Distance between banana and watermelon is: 3
+Distance between banana and potato is: 4
+(banana, 26)
+**************Current max noun: (apple, 30)***************
+Distance between lime and apple is: 3
+Distance between lime and pear is: 3
+Distance between lime and peach is: 3
+Distance between lime and banana is: 3
+Distance between lime and lime is: 0
+Distance between lime and lemon is: 2
+Distance between lime and blueberry is: 4
+Distance between lime and strawberry is: 4
+Distance between lime and mango is: 3
+Distance between lime and watermelon is: 4
+Distance between lime and potato is: 5
+(lime, 34)
+**************Current max noun: (lime, 34)***************
+Distance between lemon and apple is: 3
+Distance between lemon and pear is: 3
+Distance between lemon and peach is: 3
+Distance between lemon and banana is: 3
+Distance between lemon and lime is: 2
+Distance between lemon and lemon is: 0
+Distance between lemon and blueberry is: 4
+Distance between lemon and strawberry is: 4
+Distance between lemon and mango is: 3
+Distance between lemon and watermelon is: 4
+Distance between lemon and potato is: 8
+(lemon, 37)
+**************Current max noun: (lemon, 37)***************
+Distance between blueberry and apple is: 3
+Distance between blueberry and pear is: 3
+Distance between blueberry and peach is: 3
+Distance between blueberry and banana is: 3
+Distance between blueberry and lime is: 4
+Distance between blueberry and lemon is: 4
+Distance between blueberry and blueberry is: 0
+Distance between blueberry and strawberry is: 2
+Distance between blueberry and mango is: 3
+Distance between blueberry and watermelon is: 4
+Distance between blueberry and potato is: 5
+(blueberry, 34)
+**************Current max noun: (lemon, 37)***************
+Distance between strawberry and apple is: 3
+Distance between strawberry and pear is: 3
+Distance between strawberry and peach is: 3
+Distance between strawberry and banana is: 2
+Distance between strawberry and lime is: 4
+Distance between strawberry and lemon is: 4
+Distance between strawberry and blueberry is: 2
+Distance between strawberry and strawberry is: 0
+Distance between strawberry and mango is: 3
+Distance between strawberry and watermelon is: 4
+Distance between strawberry and potato is: 4
+(strawberry, 32)
+**************Current max noun: (lemon, 37)***************
+Distance between mango and apple is: 2
+Distance between mango and pear is: 2
+Distance between mango and peach is: 2
+Distance between mango and banana is: 2
+Distance between mango and lime is: 3
+Distance between mango and lemon is: 3
+Distance between mango and blueberry is: 3
+Distance between mango and strawberry is: 3
+Distance between mango and mango is: 0
+Distance between mango and watermelon is: 3
+Distance between mango and potato is: 7
+(mango, 30)
+**************Current max noun: (lemon, 37)***************
+Distance between watermelon and apple is: 3
+Distance between watermelon and pear is: 3
+Distance between watermelon and peach is: 3
+Distance between watermelon and banana is: 3
+Distance between watermelon and lime is: 4
+Distance between watermelon and lemon is: 4
+Distance between watermelon and blueberry is: 4
+Distance between watermelon and strawberry is: 4
+Distance between watermelon and mango is: 3
+Distance between watermelon and watermelon is: 0
+Distance between watermelon and potato is: 4
+(watermelon, 35)
+**************Current max noun: (lemon, 37)***************
+Distance between potato and apple is: 7
+Distance between potato and pear is: 7
+Distance between potato and peach is: 7
+Distance between potato and banana is: 4
+Distance between potato and lime is: 5
+Distance between potato and lemon is: 8
+Distance between potato and blueberry is: 5
+Distance between potato and strawberry is: 4
+Distance between potato and mango is: 7
+Distance between potato and watermelon is: 4
+Distance between potato and potato is: 0
+(potato, 58)
+**************Current max noun: (potato, 58)***************
+outcast(data/outcast11.txt) = potato

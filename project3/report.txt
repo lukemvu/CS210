@@ -1,0 +1,76 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<10>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<3>>>
+
+3. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Autocomplete Term): Looked up how to implement String static
+   method compareTo() to lexicographically compare the string queries from
+   this and that query objects. Looked up how to implement substring to store
+   a prefix of length r of string query v, w into string a, b. Substring takes
+   two arguments, start index inclusive, end index exclusive. For toString
+   method, looked up how to format a string; it is done via String.format().
+   Initial run gave the incorrect top 5 by reverse-weight order. The sort
+   was sorting by weight order, ascending. I fixed by swapping the < and >
+   signs in order for the comparator to sort properly by reverse-weight order.
+
+   Problem 2 (Binary Search Deluxe): I started by looking up the standard
+   binary search implementation. From there I implemented code for a binary
+   search of integers within an array as a basis to start. To tackle finding
+   the first index of the key, I traced a bin search on an array on paper.
+   Once a key is found, by checking the index to the immediate left side,
+   I can check if the index is the first of the key or not. If that index-1
+   also matches the key, then the index is not the first index therefore I
+   can set my new high to the current mid/index. I continue the bin search
+   setting a new mid point. Eventually, a key match will come up on an index
+   where index-1 is not the key, which tells that it is first index. Next,
+   I coded in the comparisons c.compare(key, key). Same method applied for
+   lastIndex method with the exceptions of checking index to the right and
+   setting the low to the new mid/index. GS tests pass corner cases and only
+   first method for wiktionary.txt. Reading output on gs, some cases were
+   returning -1 from the method meaning that the key was never found. Figured
+   the while loop was exiting before finding the mid value. Changed the
+   conditional to be <= from < for the while loop. This allowed
+   some more test cases to pass. To address ArrayIndexOutOfBoundsException
+   errors I realized that there was a chance that the index could be at start
+   or end of an array and the check left/right indices would attempt to access
+   those non-existing sites; A condition if statement is put in place to return
+   the index if the key is found in those locations. There were still timeout
+   errors on gs tests; the exit condition wasn't being met. Mid index was
+   getting stuck as integer division drops the decimal; low = mid+1; fixed
+   the issue to properly increment mid.
+
+   Problem 3 (Autocomplete): Looked up what a defensive copy is. I needed
+   to initialize a fresh array of terms without modifying what was being
+   passed in. I implemented Array.copyOf() to copy into new array terms[].
+   Lexicographic sort implemented with Array.sort as done in
+   BinarySearchDeluxe main method. In order to create an array of matches,
+   the number of matched terms needed to be determined. This could be found
+   by subtracting the last and first indices of matches for the prefix and
+   adding one. I modified the code from the main method of
+   BinarySearchDeluxe to calculate the matches. Here the matches of the
+   terms[] array needed to be copied into matches; the firstIndex of the
+   match would be copied into matches[0] through to lastIndex. matches[]
+   was next sorted into reverse weight order. numberOfMatches() reuses
+   the same code in the allMatches() method to find matches.
+   
+4. Did you receive help from anyone? List their names, status (classmate, 
+   CS210 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   ...                ...          ...
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   ...

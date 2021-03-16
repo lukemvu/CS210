@@ -1,0 +1,7 @@
+*.pdf
+data
+exams
+lecture-handouts
+*.zip
+.idea
+out
